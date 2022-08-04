@@ -1,0 +1,51 @@
+.formacion_cursos{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    grid-template-rows: auto;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+
+}
+
+.formacion_cursos__card{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    justify-content:space-between ;
+}
+
+.formacion_cursos__card__titulo{
+    font-weight: 700;
+    font-size: calc(1em + .4vw);
+
+}
+
+.formacion_cursos__card__date{
+    font-size: calc(.8em + .3vw);
+    font-weight: 400;
+}
+
+.formacion_cursos__card__imagen{
+    display: flex;
+    width: 100%;
+    padding-bottom: .5rem;
+}
+
+@media screen and (max-width:768px){
+    .formacion_cursos{
+        grid-template-columns: repeat(2,48%);
+        gap: 1rem;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width: 430px){
+    .formacion_cursos{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+    }
+}
+    

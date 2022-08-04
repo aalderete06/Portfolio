@@ -1,0 +1,26 @@
+.input-mensaje-error{
+    display: none;
+    box-shadow:0 0 10px 5px #df2525;
+    outline: 0;
+}
+
+.input-container--invalid {
+    margin-bottom: 0.5rem;
+  }
+  
+.input-container--invalid input {
+    border: 1px solid #df2525;
+    border-radius: 7px;
+}
+
+.input-container--invalid .input-mensaje-error {
+    color: #df2525;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.input-container{
+    display: flex;
+    flex-flow: column nowrap;
+}

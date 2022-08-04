@@ -1,0 +1,39 @@
+.grey{
+    background: #F5F5F5;
+}
+
+.blue{
+    background:rgb(175, 238, 238);
+}
+
+.margin{
+    margin: 0 5%;
+    padding: 1.5rem 0;
+}
+
+:root{
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+}
+.titulo{
+    text-align: center;
+    font-size: calc(1.2em + 1vw);
+    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+}
+
+@media screen and (max-width:768px){
+    .titulo{
+        font-size: calc(1em + 1.2vw);
+    }
+}
+
+@media screen and (max-width: 430px){
+    .margin{
+        margin: 0 10%;
+    }
+
+    .titulo{
+        font-size: calc(1em + 1vw);
+    }
+}

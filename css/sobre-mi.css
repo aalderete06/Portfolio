@@ -1,0 +1,105 @@
+
+.presentacion{
+    align-items: center;
+    display: flex;
+}
+
+.presentacion_texto{
+    width: 70%;
+    align-items: center;
+}
+
+.presentacion_texto__texto-principal{
+    font-size: calc(1em + 3vw);
+    font-weight: 700;
+}
+
+.presentacion_texto__texto-secundario{
+    font-size: calc(1em + 1vw);
+    font-weight: 400;
+    line-height: 170%;
+}
+
+.presentacion_imagen{
+    width: 30%;
+}
+
+.presentacion_links{
+    display: flex;
+    list-style: none;
+}
+
+.presentacion_links__item{
+    text-decoration: none;
+
+    color: inherit;
+    font-size: 100%;
+    font-weight: 500;
+}
+
+.presentacion_links__item+img{
+    margin-right: 2rem;
+    margin-left: .4rem;
+    width: 10px;
+}
+
+.sobre-mi__titulo{
+    padding: 0;
+    text-align: initial;
+}
+
+.sobre-mi__parrafo{
+    font-size: calc(.8em + 1vw);
+}
+
+.sobre-mi__firma{
+
+    width: 25vw;
+}
+
+@media screen and (max-width:768px){
+    .presentacion_texto{
+        width: 70%;
+    }
+
+    .presentacion_imagen{
+        width: 30%;
+    }
+
+    .presentacion_links__item{
+        font-size: 90%;
+        font-weight: 500;
+    }
+
+    .sobre-mi__firma{
+
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width:430px){
+
+    .presentacion{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .presentacion_imagen{
+        width: 40%;
+    }
+
+
+    .presentacion_texto{
+        width: 100%;
+    }
+
+    .presentacion_links__item{
+        font-size: 80%;
+        font-weight: 600;
+    }
+
+    .sobre-mi__firma{
+
+        width: 40vw;
+    }
+}

@@ -1,0 +1,67 @@
+.head{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+
+.head_nombre{
+    width: 20%;
+    font-size: calc(.8em + .6vw);
+    font-weight: 700;
+}
+
+.head_referencias{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 70%;
+    font-size: 1.9vw;
+    font-weight: 500;
+}
+
+.head_referencias__link{
+    text-decoration: none;
+    color: inherit;
+}
+
+#email-redireccion{
+    font-weight: 700;
+}
+
+@media screen and (max-width:768px){
+    .head_nombre{
+        width: 40%;
+    }
+    
+    #sobre{
+        display: none;
+    }
+    #hobbies{
+        display: none;
+    }
+    #formacion{
+        display: none;
+    }
+    #proyectos{
+        display: none;
+    }
+
+    #email-redireccion{
+        justify-content: flex-end;
+        font-size: initial;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:430px){
+    .head_nombre{
+        font-size: calc(.8em + .4vw);
+    }
+    
+
+    #email-redireccion{
+        font-weight: 400;
+        font-size: calc(1.5em + .7vw);
+    }
+}
